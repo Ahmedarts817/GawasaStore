@@ -93,7 +93,7 @@ const setImageURL = (doc) => {
   if (doc.images) {
     const imagesList = [];
     doc.images.forEach((image) => {
-      const imageUrl = `http://${process.env.BASE_URL}/products/${image}`;
+      const imageUrl = `https://${process.env.BASE_URL}/products/${image}`;
       imagesList.push(imageUrl);
     });
     doc.images = imagesList;
